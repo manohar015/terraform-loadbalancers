@@ -1,5 +1,9 @@
-module "vpc" {
-  source                = "./vendor/modules/vpc"
+module "alb-private" {
+  source                = "./vendor/modules/alb"
+}
+
+module "alb-public" {
+  source                = "./vendor/modules/alb"
 }
 
 

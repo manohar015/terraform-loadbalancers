@@ -10,13 +10,11 @@ output "PRIVATE_LISTERNER_ARN" {
     value = module.alb-private.LISTENER_ARN[0]
 }
 
-output "PUBLIC_ALB_ADDRESS" {
-    value = 
+output "PRIVATE_ALB_ADDRESS" {
+    value =  module.alb-private.ALB_ADDRESS
 }
 
+output "PUBLIC_ALB_ADDRESS" {
+    value =  module.alb-public.ALB_ADDRESS
+}
 
-
-
-# output "ALB_ADDRESS" {
-#     value = aws_lb.alb.dns_name
-# }
